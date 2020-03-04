@@ -1,0 +1,54 @@
+<RCC>
+  <qresource prefix="png">
+    <file>../images/icons/PNG/Conversation.png</file>
+    <file>../images/icons/PNG/Home.png</file>
+    <file>../images/icons/PNG/data.png</file>
+    <file>../images/icons/PNG/spreadsheet.png</file>
+    <file>../images/icons/PNG/Actions-edit-clear-list-icon.png</file>
+    <file>../images/icons/PNG/search.png</file>
+    <file>../images/icons/PNG/information.png</file>
+    <file>../images/icons/PNG/camera.png</file>
+    <file>../images/icons/PNG/data_grid.png</file>
+    <file>../images/icons/PNG/exit.png</file>
+    <file>../images/icons/PNG/applications.png</file>
+    <file>../images/icons/PNG/back_alt.png</file>
+    <file>../images/icons/PNG/chart.png</file>
+    <file>../images/icons/PNG/copy doc.png</file>
+    <file>../images/icons/PNG/down_alt.png</file>
+    <file>../images/icons/PNG/cglogo.png</file>
+    <file>../images/icons/PNG/Download.png</file>
+    <file>../images/icons/PNG/folder.png</file>
+    <file>../images/icons/PNG/forward_alt.png</file>
+    <file>../images/icons/PNG/forward.png</file>
+    <file>../images/icons/PNG/fullscreen.png</file>
+    <file>../images/icons/PNG/shortcuts.png</file>
+    <file>../images/icons/PNG/GeneralPreferences.png</file>
+    <file>../images/icons/PNG/info.png</file>
+    <file>../images/icons/PNG/f.png</file>
+    <file>../images/icons/PNG/advancedsettings.png</file>
+    <file>../images/icons/PNG/refresh.png</file>
+    <file>../images/icons/PNG/X.png</file>
+    <file>../images/icons/PNG/help.png</file>
+    <file>../images/icons/PNG/open alt.png</file>
+    <file>../images/icons/PNG/server.png</file>
+    <file>../images/icons/PNG/up_alt.png</file>
+    <file>../images/icons/PNG/Settings2.png</file>
+    <file>../images/icons/PNG/db_update.png</file>
+    <file>../images/icons/PNG/trash.png</file>
+    <file>../images/icons/PNG/trash full.png</file>
+    <file>../images/icons/PNG/zoomin.png</file>
+    <file>../images/icons/PNG/zoomout.png</file>
+  </qresource>
+  <qresource prefix="html">
+    <file>../Manual.html</file>
+  </qresource>
+  <qresource prefix="fonts">
+    <file>../fonts/DejaVuSans.ttf</file>
+    <file>../fonts/DroidSerif-BoldItalic.ttf</file>
+    <file>../fonts/DroidSerif-Bold.ttf</file>
+    <file>../fonts/DroidSerif-Italic.ttf</file>
+    <file>../fonts/DroidSerif-Regular.ttf</file>
+    <file>../fonts/Monaco.ttf</file>
+    <file>../fonts/tahoma.ttf</file>
+  </qresource>
+</RCC>

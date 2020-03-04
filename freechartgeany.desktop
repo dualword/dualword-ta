@@ -1,0 +1,8 @@
+[Desktop Entry]
+GenericName=Free Chart Geany
+Name=FreeChartGeany
+Exec=FreeChartGeany
+Icon=/usr/share/pixmaps/freechartgeany.png
+Type=Application
+Terminal=false
+Categories=Office;

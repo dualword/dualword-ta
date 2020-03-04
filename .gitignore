@@ -1,0 +1,12 @@
+/FreeChartGeany
+/moc/
+/obj/
+/ui/
+/Makefile
+/qrc_ChartGeany.cpp
+
+#eclipse
+/.cproject
+/.project
+/.externalToolBuilders
+/.settings

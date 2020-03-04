@@ -1,0 +1,50 @@
+/*
+ * 
+ * Copyright 2016 Lucas Tsatiris <chartgeany@gmail.com>
+ * 
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+ * MA 02110-1301, USA.
+ * 
+ * 
+ */
+
+#ifndef OPTSIZE_H
+#define OPTSIZE_H
+
+#ifdef Q_CC_GNU 
+
+#if defined(__GNUC__) && (__GNUC__ > 4)
+#ifdef __OPTIMIZE__
+#ifdef __i386
+#pragma GCC optimize ("Os", "omit-frame-pointer")
+#else
+#pragma GCC optimize ("Os")
+#endif /* __i386 */
+#endif /* __OPTIMIZE__ */
+#endif /* defined(__GNUC__) && (__GNUC__ > 4) */
+
+#if defined(__GNUC__) && (__GNUC__ == 4) && (__GNUC_MINOR__>3)
+#ifdef __OPTIMIZE__
+#ifdef __i386
+#pragma GCC optimize ("Os", "omit-frame-pointer")
+#else
+#pragma GCC optimize ("Os")
+#endif /* __i386 */
+#endif /* __OPTIMIZE__ */
+#endif /* defined(__GNUC__) && (__GNUC__ == 4) && (__GNUC_MINOR__>3) */
+
+#endif /* Q_CC_GNU  */
+
+#endif /* OPTSIZE_H */
