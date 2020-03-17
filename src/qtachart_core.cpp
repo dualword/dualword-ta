@@ -1,3 +1,4 @@
+/* Dualword-ta (2020) http://github.com/dualword/dualword-ta License:GNU GPL*/
 /*
  * 
  * Copyright 2016 Lucas Tsatiris <chartgeany@gmail.com>
@@ -76,7 +77,12 @@ QTAChartCore::QTAChartCore (QWidget * parent)
   lineobjectdialog->setModal (true);
   chartEventFilter = new QTAChartEventFilter;
   sceneEventFilter = new QTAChartSceneEventFilter ();
-  
+  hline = new QGraphicsLineItem();
+  vline = new QGraphicsLineItem();
+  hline->setPen (QPen (QColor("green")));
+  vline->setPen (QPen (QColor("green")));
+  scene->addItem(hline);
+  scene->addItem(vline);
   monthlit << "JAN" << "FEB" << "MAR" << "APR" << "MAY" << "JUN"
             << "JUL" << "AUG" << "SEP" << "OCT" << "NOV" << "DEC";
   
@@ -131,7 +137,9 @@ QTAChartCore::~QTAChartCore (void)
   delete objectsScr;
   delete chartEventFilter;
   delete sceneEventFilter;
-    
+  delete hline;
+  delete vline;
+
   deleteITEMS ();
   delete[] ITEMS;
   
@@ -1237,10 +1245,10 @@ QTAChartCore::saveSettings ()
   SQLCommand += QString::number (framewidth) + ", ";  
   
   // startbar
-  SQLCommand += QString::number (*startbar) + ", ";  
+  SQLCommand += "0, ";
   
    // excess_drag_width
-  SQLCommand += QString::number (*excess_drag_width, 'f', 1) + ", ";  
+  SQLCommand += "1, ";
   
   // foreground color
   SQLCommand += QString::number ((qreal) forecolor.rgb (), 'f', 0) + ", ";

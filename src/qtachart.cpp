@@ -1,3 +1,4 @@
+/* Dualword-ta (2020) http://github.com/dualword/dualword-ta License:GNU GPL*/
 /*
  * 
  * Copyright 2016 Lucas Tsatiris <chartgeany@gmail.com>
@@ -687,15 +688,15 @@ QTAChart::expandBtn_clicked (void)
   if (core->object_drag)
     return;
 
-  mainwindow = (reinterpret_cast <MainWindow *> ((parentWidget ()->parentWidget ()->
-                                parentWidget ()->parentWidget ())));
+  mainwindow = (reinterpret_cast <MainWindow *> ((parentWidget ()->parentWidget ())));
+//->  parentWidget ()->parentWidget ()
 
   if (core->events_enabled == true)
   {
-    if (mainwindow->expandedChart ())
-      mainwindow->setExpandChart (false);
-    else
-      mainwindow->setExpandChart (true);
+//    if (mainwindow->expandedChart ())
+//      mainwindow->setExpandChart (false);
+//    else
+//      mainwindow->setExpandChart (true);
     return;
   }
   else

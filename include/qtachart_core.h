@@ -1,3 +1,4 @@
+/* Dualword-ta (2020) http://github.com/dualword/dualword-ta License:GNU GPL*/
 /*
  * 
  * Copyright 2016 Lucas Tsatiris <chartgeany@gmail.com>
@@ -212,6 +213,8 @@ public:
   QGraphicsLineItem *leftedge;	// line indicating chart's left edge
   QGraphicsLineItem *rightedge;	// line indicating chart's right edge
   QGraphicsLineItem *hvline;	// line item to be used in hline or vline
+  QGraphicsLineItem *hline;
+  QGraphicsLineItem *vline;
   QToolButton *propertiesBtn;	// chart's properties button
   QToolButton *helpBtn;	// chart's help button
   QToolButton *dataBtn;	// chart's help button

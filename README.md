@@ -11,5 +11,4 @@ Third Party Software:
  - TA-Lib License: BSD
  - FreeChartGeany License: GPL
 
-
-![Screenshot](etc/screenshot/screenshot.png)
+![Screenshot](Screenshot.png)

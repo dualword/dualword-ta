@@ -1,3 +1,4 @@
+/* Dualword-ta (2020) http://github.com/dualword/dualword-ta License:GNU GPL*/
 /*
  * 
  * Copyright 2016 Lucas Tsatiris <chartgeany@gmail.com>
@@ -96,6 +97,9 @@ sqlcb_markets(void *dummy, int argc, char **argv, char **column);
 // sqlite3_exec callback for retrieving symbol table
 extern int
 sqlcb_symbol_table(void *dummy, int argc, char **argv, char **column);
+
+extern int
+sqlcb_symbol_table2(void *dummy, int argc, char **argv, char **column);
 
 // sqlite3_exec callback for retrieving datafeeds
 extern int

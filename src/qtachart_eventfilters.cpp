@@ -1,3 +1,4 @@
+/* Dualword-ta (2020) http://github.com/dualword/dualword-ta License:GNU GPL*/
 /*
  * 
  * Copyright 2016 Lucas Tsatiris <chartgeany@gmail.com>
@@ -325,6 +326,19 @@ QTAChartSceneEventFilter::eventFilter (QObject * object, QEvent * event)
     chartcore->setBottomText (x);
     chartcore->setRullerCursor (y);
     
+    if (x >= chartcore->chartleftmost &&
+        y >= chartcore->charttopmost &&
+        x <= chartcore->chartrightmost &&
+        y <= chartcore->chartbottomost){
+    	chartcore->hline->setVisible(true);
+    	chartcore->vline->setVisible(true);
+        chartcore->hline->setLine(chartcore->chartleftmost, y, chartcore->chartrightmost, y);
+        chartcore->vline->setLine(x, chartcore->charttopmost, x, chartcore->chartbottomost);
+    }else{
+    	chartcore->hline->setVisible(false);
+    	chartcore->vline->setVisible(false);
+    }
+
     if (x >= chartcore->chartleftmost &&
         y >= chartcore->charttopmost &&
         x <= chartcore->chartrightmost + chartcore->right_border_width &&

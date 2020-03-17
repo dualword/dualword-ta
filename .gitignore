@@ -1,9 +1,9 @@
-/FreeChartGeany
+/.build/
+/dualword-ta
 /moc/
 /obj/
 /ui/
 /Makefile
-/qrc_ChartGeany.cpp
 
 #eclipse
 /.cproject
